@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+Display:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans Display', sans-serif;
+    background: orange;
+}
+
+.container{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.groceries{
+    width: 600px;
+    min-height: 100vh;
+    margin: auto;
+    background: white;
+    box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.groceries h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    margin-top: 1em;
+}
+
+.groceries i{
+    font-size: 2rem;
+    color: orangered;
+}
+
+.groceries input{
+    margin-left: 0.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid black;
+    width: 50%;
+}
+
+#allItems h2{
+    margin-left: 100px;
+    margin-right: 20px;
+    margin-top: 25px;
+    font-size: 1.3rem;
+}
+
+
+
+
+/* Responsiveness */
+
+@media(max-width: 480px){
+    .groceries h1{
+        font-size: 2rem;
+        margin-top: 0.8em;
+    }
+    .groceries i{
+        font-size: 1.5rem;
+    }
+    .groceries input{
+        font-size: 1rem;
+    }
+    #allItems h2{
+        margin-left: 25px;
+        font-size: .9rem;
+    }
+}
+
+/* End of Responsiveness */
